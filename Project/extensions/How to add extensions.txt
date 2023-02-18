@@ -1,0 +1,14 @@
+All these steps require internet access, not for downloading extension but for VS code that attaches docker to work smoothly.
+
+STEP 1 - Download Remote development inside VS code of local computer
+
+STEP 2 - Open Remote Explorer, right-click at the <ContainerName>, click attach to container, it will open new window of VS code with attached container
+
+STEP 3 - Open the folder called "App", now you can see the extensions folder and other files
+
+STEP 4 - Chose which extension do you want it to be install after attach VS code. Link for download extension https://marketplace.visualstudio.com/vscode save the file at the folder called "extensions" for use in this docker
+
+STEP 5 - Use this command in the attach VS code terminal.   code --install-extension ./<File/Path> 
+    For this container use these, Open integrated Terminal in the folder "/app" of the container and run the command below
+code --install-extension ./extensions/ms-python.python-2023.3.10411009.vsix
+code --install-extension ./extensions/ms-toolsai.jupyter-2023.2.1000421627.vsix
