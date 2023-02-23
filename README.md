@@ -114,6 +114,12 @@ Copy the rest of the file in the folder to the image. Set the default command to
 </p>
 Put name after -t it will take some time depending on your speed of PC and internet
 
+For building image if you create the same image 
+`docker build -t big-data-engineering-with-python`
+
+If you want to pull my image you can use
+`docker pull mylubnan/big-data-engineering-with-python:1.0`
+
 **10. Run docker container**
 <p float="left">
  <img src="Images/10.png" alt="image" width="100%"/> 
@@ -127,6 +133,9 @@ After --name is the name of the docker container follow with docker image name
 <p float="left">
  <img src="Images/11.png" alt="image" width="100%"/> 
 </p>
+
+ `jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root`
+
 Activate Jupyter Notebook into port 8888 that was mapping the port of 8888 from the host to the container when I was running the container, and make sure to take the token after running Jupyter it appears after the run is done check the result it says token=xxxxxxxxxxxxxxxx just in case it needs to use
 <p float="left">
  <img src="Images/12.png" alt="image" width="100%"/> 
