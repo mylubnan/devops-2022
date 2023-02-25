@@ -138,7 +138,7 @@ After --name is the name of the docker container follow with docker image name
 For Visual Studio Code due to being unable to open VS code inside docker so I decide to use VS code outside but access through VS code extension called Dev Containers by doing so we can use VS code locally and then remotely edit and build the code inside the docker so there will no longer be a problem called "code work ok on my pc I don't know why it does not work on yours"
 
 <p float="left">
- <img src="Images/open-button" alt="image" width="100%"/> 
+ <img src="Images/open-button.png" alt="image" width="100%"/> 
 </p>
 
 **To activate VS Code that remote with the inside docker.**
