@@ -44,11 +44,13 @@ the command -y is mean that whenever the installation asks yes or no it will alw
 Git is a version control system, and to check the version or is it installed type this via Jupyter Nootbook
 '!git --version'
 
+GitHub is online version control, that can use by creating a repo on the GitHub website and link the git on the host with GitHub.
+
+'git remote add origin https://github.com/your-username/your-repo-name.git'
+
 GnuPG is an OpenPGP standard for encrypting and signing data, and to check the version or is it installed type this via Jupyter Nootbook
 '!gpg --version'
 due to errors such as ".gpg" when trying to install some packages so install GnuPG beforehand, and it will be fixed
-
-For Visual Studio Code due to unable to open VS code inside docker so I decide to use VS code outside but access through VS code extension call Dev Containers by doing so we can use VS code local then remote for edit and build the code inside the docker so there will no longer be a problem call "code work ok on my pc I don't know why it does not work on yours"
 
 PostgreSQL is object-relational database management system (ORDBMS), and to check the version or is it installed type this via Jupyter Nootbook
 '!psql --version'
@@ -130,6 +132,22 @@ If you want to pull my image you can use.
 </p>
 After -p is the port I use to map from the host to the docker container, -p 8888:8888 for Jupyter Notebook, -p 0002:8080 for web server, -p 0003:5432 for PostgreSQL database
 After --name is the name of the docker container follow with docker image name
+
+---
+
+For Visual Studio Code due to being unable to open VS code inside docker so I decide to use VS code outside but access through VS code extension called Dev Containers by doing so we can use VS code locally and then remotely edit and build the code inside the docker so there will no longer be a problem called "code work ok on my pc I don't know why it does not work on yours"
+
+<p float="left">
+ <img src="Images/open-button" alt="image" width="100%"/> 
+</p>
+
+**To activate VS Code that remote with the inside docker.**
+
+Firstly, download VS Code on the host machine. Then, download the Dev Containers extension. After that, there will be a button on the most bottom left called "Open a Remote Window". when clicking on it it will show many options, choose "Attach to Running Container" if your container already running it will show, if not make sure to start your container before this step. Then, it will load the docker and attach VS Code remote inside the docker.
+
+<p float="left">
+ <img src="Images/attach.png" alt="image" width="100%"/> 
+</p>
 
 ##  Method to demonstrate
 
