@@ -42,18 +42,18 @@ other choice for dependencies "curl, software-properties-common"
 the command -y is mean that whenever the installation asks yes or no it will always answer yes
 
 Git is a version control system, and to check the version or is it installed type this via Jupyter Nootbook
-'!git --version'
+`!git --version`
 
 GitHub is online version control, that can use by creating a repo on the GitHub website and link the git on the host with GitHub.
 
-'git remote add origin https://github.com/your-username/your-repo-name.git'
+`git remote add origin https://github.com/your-username/your-repo-name.git`
 
 GnuPG is an OpenPGP standard for encrypting and signing data, and to check the version or is it installed type this via Jupyter Nootbook
-'!gpg --version'
+`!gpg --version`
 due to errors such as ".gpg" when trying to install some packages so install GnuPG beforehand, and it will be fixed
 
 PostgreSQL is object-relational database management system (ORDBMS), and to check the version or is it installed type this via Jupyter Nootbook
-'!psql --version'
+`!psql --version`
 
 **3. Install the required packages using conda**
 <p float="left">
@@ -61,29 +61,29 @@ PostgreSQL is object-relational database management system (ORDBMS), and to chec
 </p>
 other choice for packages "statsmodels, matplotlib, seaborn"
 
-Jupyter is an open-source web-based platform for interactive computing, using by run this in CMD or Terminal 'jupyter lab --port=xxxx --ip=0.0.0.0 --no-browser --allow-root'
-Make sure that the port of jupyter lab --port=xxxx free and match the port of Docker when first run 'docker run -it -p xxxx:xxxx --name <containerName> <imageName>'
+Jupyter is an open-source web-based platform for interactive computing, using by run this in CMD or Terminal `jupyter lab --port=xxxx --ip=0.0.0.0 --no-browser --allow-root`
+Make sure that the port of jupyter lab --port=xxxx free and match the port of Docker when first run `docker run -it -p xxxx:xxxx --name <containerName> <imageName>`
 To check the version type this via Jupyter Nootbook
-'!jupyter --version'
+`!jupyter --version`
 
 NumPy is a Python library, and to check the version or is it installed type this via Jupyter Nootbook
-'!python -c "import numpy; print(numpy.__version__)"'
+`!python -c "import numpy; print(numpy.__version__)"`
 
 Pandas is a Python library, and to check the version or is it installed type this via Jupyter Nootbook
-'!python -c "import pandas; print(pandas.__version__)"'
+`!python -c "import pandas; print(pandas.__version__)"`
 
 IPython is an enhanced interactive Python, and to check the version or is it installed type this via Jupyter Nootbook
-'!ipython --version'
+`!ipython --version`
 
 Psycopg2 is a Python library that provides a Python interface for the PostgreSQL database, and to check the version or is it installed type this via Jupyter Nootbook
-'!pip show psycopg2'
+`!pip show psycopg2`
 
 **4. Install findspark using pip**
 <p float="left">
  <img src="Images/4.png" alt="image" width="50%"/> 
 </p>
 Findspark for pyspark to use in jupyter nootbook, and to check the version or is it installed type this via Jupyter Nootbook
-'!pip show findspark'
+`!pip show findspark`
 
 **5. Install Apache Cassandra**
 <p float="left">
@@ -108,7 +108,7 @@ Install it by using Wget and extract the file to /opt/kafka then set the PATH so
  <img src="Images/8.png" alt="image" width="50%"/> 
 </p>
 Copy the rest of the file in the folder to the image. Set the default command to run when starting the container, and command for run Jupyter Notebook type this
-'jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root'
+`jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root`
 
 **9. Build image**
 <p float="left">
@@ -135,7 +135,7 @@ After --name is the name of the docker container follow with docker image name
 
 ---
 
-For Visual Studio Code due to being unable to open VS code inside docker so I decide to use VS code outside but access through VS code extension called Dev Containers by doing so we can use VS code locally and then remotely edit and build the code inside the docker so there will no longer be a problem called "code work ok on my pc I don't know why it does not work on yours"
+For Visual Studio Code due to being unable to open VS code inside docker so I decide to use VS code outside but access through VS code extension called Dev Containers by doing so we can use VS code locally and then remotely edit and build the code inside the docker so there will no longer be a problem called "code work ok on my pc I do not know why it does not work on yours"
 
 <p float="left">
  <img src="Images/open-button.png" alt="image" width="100%"/> 
@@ -162,11 +162,11 @@ Activate Jupyter Notebook into port 8888 that was mapping the port of 8888 from 
 <p float="left">
  <img src="Images/12.png" alt="image" width="100%"/> 
 </p>
-Now open 'http://localhost:8888/lab' or 'http://127.0.0.1:8888/lab'
+Now open `http://localhost:8888/lab` or `http://127.0.0.1:8888/lab`
 <p float="left">
  <img src="Images/13.png" alt="image" width="100%"/> 
 </p>
-Then open file name 'Demo.ipynb' or 'http://127.0.0.1:8888/lab/tree/Demo.ipynb'
+Then open file named Demo.ipynb or `http://127.0.0.1:8888/lab/tree/Demo.ipynb`
 <p float="left">
  <img src="Images/14.png" alt="image" width="100%"/> 
 </p>
@@ -182,15 +182,19 @@ You sholde see something like these, it means everything installed successfully
 
 **3. Demo PostgreSQL**
 Run it step by step 
-* To use it run 'service postgresql start' 
-* To check that is it ready run 'pg_isready' 
-* To connect to the PostgreSQL server run 'psql -h localhost -U postgres'
+* To use it run `service postgresql start` 
+* To check that is it ready run `pg_isready` 
+* To connect to the PostgreSQL server run `psql -h localhost -U postgres`
 <p float="left">
  <img src="Images/17.png" alt="image" width="100%"/> 
 </p>
 
-If you get the same error don't worry I got the solution. So, If you could not find the password, to reset it go to Terminal and run 'su - postgres' then 'psql -c "ALTER USER postgres PASSWORD '<NewPassword>';"' at <NewPassword> replace with the desired password, then 'exit' and try 'psql -h localhost -U postgres' again but this time enter the <NewPassword>
-* To stop postgresql run 'service postgresql stop'
+If you get the same error do not worry I got the solution. So, If you could not find the password, to reset it go to Terminal and run 
+
+`su - postgres`
+
+then `psql -c "ALTER USER postgres PASSWORD '<NewPassword>';"` at <NewPassword> replace with the desired password, then `exit` and try `psql -h localhost -U postgres` again but this time enter the <NewPassword>
+* To stop postgresql run `service postgresql stop`
 <p float="left">
  <img src="Images/18.png" alt="image" width="100%"/> 
 </p>
@@ -202,8 +206,8 @@ Re-run and now you probably see the new error this error shows that it did not h
 
 **4. Demo Apache Airflow**
 Run it step by step 
-* To start web service of Apache Airflow 'airflow webserver -p 8080' 
-* Also run 'airflow scheduler' for monitoring and managing
+* To start web service of Apache Airflow `airflow webserver -p 8080` 
+* Also run `airflow scheduler` for monitoring and managing
 Then you will see theses running
 <p float="left">
  <img src="Images/20.png" alt="image" width="100%"/> 
@@ -220,8 +224,8 @@ Then you will see theses running
 <p float="left">
  <img src="Images/24.png" alt="image" width="100%"/> 
 </p>
-Now you can use 'http://localhost:2' or 'http://127.0.0.1:2' because it already mapping host port which is 0002 to docker port which is 8080. If you don't see this Sign In page I recommend running 'airflow webserver -p 8080' again and pressing Y on the keyboard within 4 seconds. 
-After you get to the sign in page first you need to create user account as admin role run this 'airflow users create -r Admin -u admin -e admin@example.com -f Admin -l User -p admin' Then you can use
+Now you can use `http://localhost:2` or `http://127.0.0.1:2` because it already mapping host port which is 0002 to docker port which is 8080. If you do not see this Sign In page I recommend running `airflow webserver -p 8080` again and pressing Y on the keyboard within 4 seconds. 
+After you get to the sign in page first you need to create user account as admin role run this `airflow users create -r Admin -u admin -e admin@example.com -f Admin -l User -p admin` Then you can use
 
 * username: admin
 * password: admin
