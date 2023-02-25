@@ -162,11 +162,11 @@ Activate Jupyter Notebook into port 8888 that was mapping the port of 8888 from 
 <p float="left">
  <img src="Images/12.png" alt="image" width="100%"/> 
 </p>
-Now open `http://localhost:8888/lab` or `http://127.0.0.1:8888/lab`
+Now open 'http://localhost:8888/lab' or 'http://127.0.0.1:8888/lab'
 <p float="left">
  <img src="Images/13.png" alt="image" width="100%"/> 
 </p>
-Then open file named Demo.ipynb or `http://127.0.0.1:8888/lab/tree/Demo.ipynb`
+Then open file named Demo.ipynb or 'http://127.0.0.1:8888/lab/tree/Demo.ipynb'
 <p float="left">
  <img src="Images/14.png" alt="image" width="100%"/> 
 </p>
@@ -224,11 +224,13 @@ Then you will see theses running
 <p float="left">
  <img src="Images/24.png" alt="image" width="100%"/> 
 </p>
-Now you can use `http://localhost:2` or `http://127.0.0.1:2` because it already mapping host port which is 0002 to docker port which is 8080. If you do not see this Sign In page I recommend running `airflow webserver -p 8080` again and pressing Y on the keyboard within 4 seconds. 
+Now you can use 'http://localhost:2' or 'http://127.0.0.1:2' because it already mapping host port which is 0002 to docker port which is 8080. 
+
+If you do not see this Sign In page I recommend running `airflow webserver -p 8080` again and pressing Y on the keyboard within 4 seconds. 
 After you get to the sign in page first you need to create user account as admin role run this `airflow users create -r Admin -u admin -e admin@example.com -f Admin -l User -p admin` Then you can use
 
-* username: admin
-* password: admin
+* username: `admin`
+* password: `admin`
 <p float="left">
  <img src="Images/25.png" alt="image" width="100%"/> 
 </p>
