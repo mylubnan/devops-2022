@@ -115,10 +115,14 @@ Copy the rest of the file in the folder to the image. Set the default command to
 Put name after -t it will take some time depending on your speed of PC and internet
 
 For building image if you create the same image.
-``docker build -t big-data-engineering-with-python``
+
+
+`docker build -t big-data-engineering-with-python`
+
 
 If you want to pull my image you can use.
-``docker pull mylubnan/big-data-engineering-with-python:1.0``
+
+`docker pull mylubnan/big-data-engineering-with-python:1.0`
 
 **10. Run docker container**
 <p float="left">
